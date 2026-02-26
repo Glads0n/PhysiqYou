@@ -1,0 +1,90 @@
+.register-page {
+  height: 100vh;
+  background: url("../assets/bg-2.jpg") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 90px;
+  position: relative;
+}
+
+/* Dark overlay */
+.register-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+/* Container */
+.register-container {
+  position: relative;
+  z-index: 2;
+  width: 380px;
+  padding: 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+  color: white;
+}
+
+/* Heading */
+.register-container h1 {
+  margin-bottom: 25px;
+}
+
+/* Form */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.register-form input {
+  padding: 12px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  color: white;
+}
+
+.register-form input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+/* Button */
+.register-btn {
+  padding: 12px;
+  background: linear-gradient(90deg, #00ff88, #00c3ff);
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: linear-gradient(90deg, #00ff88, #00c3ff);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ff88;
+}
+
+/* Link */
+.login-link {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.login-link a {
+  color: #00ff88;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  color: #00c3ff;
+  text-decoration: underline;
+}
