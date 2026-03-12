@@ -54,3 +54,42 @@ class Profile(models.Model):
     def __str__(self):
         return self.user.username
 
+
+class FoodLog(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    food_name = models.CharField(max_length=255)
+    calories = models.FloatField()
+    quantity = models.FloatField()
+    date = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.food_name}"
+
+
+class WorkoutLog(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    workout_name = models.CharField(max_length=255)
+    calories_burned = models.FloatField()
+    duration = models.IntegerField()
+    date = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.workout_name}"
+    
+
+class Workout(models.Model):
+    name = models.CharField(max_length=100)
+    met_value = models.FloatField()
+
+    def __str__(self):
+        return self.name
+    
+
+class WeightLog(models.Model):
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    weight = models.FloatField()
+    date = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.weight}kg"

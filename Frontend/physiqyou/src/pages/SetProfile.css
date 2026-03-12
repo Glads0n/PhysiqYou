@@ -1,0 +1,106 @@
+.setup-container {
+  min-height: 100vh;
+  background: url("../assets/about_bg.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:85px;
+}
+
+.setup-container-overlay{
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.55); /* TINT */
+  backdrop-filter: blur(2px);
+}
+
+.setup-container h1 {
+    text-align: center;
+    color: white;
+}
+
+.setup-wrapper {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 0px;
+  justify-content: center;
+}
+
+.glass-card {
+  flex: 1;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.glass-card h2 {
+  margin-bottom: 15px;
+}
+
+input,
+select {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  color: black
+}
+
+input::placeholder {
+  color: black
+}
+
+.submit-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  padding: 14px 40px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  background: linear-gradient(90deg, #00ff88, #00c3ff);
+  color: black;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #00ff88, #00c3ff);
+  transform: scale(1.03);
+  box-shadow: 0 0 10px #00ff88;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cards-container {
+    flex-direction: column;
+  }
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: black;
+}
+
+option {
+  background: #1a1a1a;
+  color: white;
+}

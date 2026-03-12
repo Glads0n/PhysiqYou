@@ -1,0 +1,132 @@
+/* PAGE BACKGROUND */
+
+.faq-page {
+
+  min-height: 100vh;
+  background: url("../assets/about_bg.jpg") no-repeat center center/cover;
+
+}
+
+
+/* CONTAINER */
+
+.faq-container {
+
+  min-height: 100vh;
+  padding: 120px 10%;
+  color: white;
+
+}
+
+
+/* HERO SECTION */
+
+.faq-hero {
+
+  margin-bottom: 40px;
+
+}
+
+.faq-hero h1 {
+
+  font-size: 36px;
+  margin-bottom: 10px;
+
+}
+
+.faq-hero p {
+
+  font-size: 18px;
+  opacity: 0.8;
+
+}
+
+
+/* FAQ LIST */
+
+.faq-list {
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+
+/* FAQ CARD */
+
+.faq-card {
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+}
+
+
+.faq-card:hover {
+
+  transform: translateY(-3px);
+
+}
+
+
+/* QUESTION ROW */
+
+.faq-question {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.faq-question h3 {
+
+  font-size: 18px;
+
+}
+
+
+.faq-question span {
+
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+
+/* ANSWER */
+
+.faq-answer {
+
+  margin-top: 15px;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  opacity: 0.9;
+
+}
+
+
+/* ACTIVE STATE */
+
+.faq-card.active {
+
+  background: rgba(255,255,255,0.12);
+
+}

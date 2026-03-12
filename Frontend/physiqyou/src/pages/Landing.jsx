@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useLocation,} from "react-router-dom";
 import api from "../api/axios";
+import { useNavigate } from "react-router-dom";
 // import axios from "axios";
 
 
@@ -22,15 +23,15 @@ useEffect(() => {
 
 const [username, setUsername] = useState("");
 const [password, setPassword] = useState("");
+const navigate = useNavigate();
 const handleLogin = async () => {
   try {
-
-    await api.get("csrf/");
 
     const response = await api.post("login/", {
       username,
       password,
     });
+    navigate("/dashboard");
 
     console.log("Success:", response.data);
     alert("Login successful");

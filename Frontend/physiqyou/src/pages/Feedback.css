@@ -1,0 +1,138 @@
+/* PAGE BACKGROUND */
+
+.feedback-page {
+
+  min-height: 100vh;
+  background: url("../assets/about_bg.jpg") no-repeat center center/cover;
+
+}
+
+
+/* CONTAINER */
+
+.feedback-container {
+
+  min-height: 100vh;
+  padding: 120px 10%;
+  color: white;
+
+  display: flex;             /* make it a flex container */
+  flex-direction: column;    /* stack children vertically */
+  justify-content: center;   /* center vertically (optional with min-height) */
+  align-items: center;       /* center horizontally */
+  text-align: center; 
+
+}
+
+
+/* HERO */
+
+.feedback-hero {
+
+  margin-bottom: 20px;
+  margin-right: 50px;
+
+}
+
+.feedback-hero h1 {
+
+  font-size: 36px;
+  margin-bottom: 10px;
+
+}
+
+.feedback-hero p {
+
+  font-size: 18px;
+  opacity: 0.8;
+
+}
+
+
+/* GLASS CARD */
+
+.feedback-page .glass-card {
+
+  max-width: 600px;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+
+}
+
+
+/* TEXTAREA */
+
+.feedback-page textarea {
+
+  width: 100%;
+  background-color: rgba(185, 184, 184, 0.212);
+  color: white;
+
+  height: 150px;
+
+  margin-top: 15px;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 14px;
+
+  resize: none;
+
+}
+
+
+/* BUTTON */
+
+.feedback-page button {
+
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 12px 0;
+
+  border-radius: 30px;
+
+  border: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  color: black;
+
+  background: linear-gradient(90deg,#00ff88,#00c3ff);
+
+  transition: all 0.3s ease;
+
+}
+
+.feedback-page button:hover {
+
+  transform: scale(1.03);
+  box-shadow: 0 0 10px #00ff88;
+
+}
+
+.feedback-page button:active {
+
+  transform: scale(0.95);
+
+}

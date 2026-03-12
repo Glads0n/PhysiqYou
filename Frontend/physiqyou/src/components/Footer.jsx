@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -11,7 +12,6 @@ function Footer() {
         <p className="footer-tagline">
           AI-Powered Fitness. Personalized. Smarter. Stronger.
         </p>
-
         <p className="footer-quote">
           “Your body can stand almost anything. It’s your mind you have to convince.”
         </p>

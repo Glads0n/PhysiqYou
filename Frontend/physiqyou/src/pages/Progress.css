@@ -1,0 +1,41 @@
+.progress-page{
+    padding:130px;
+    color:white;
+    background: url("../assets/about_bg.jpg") no-repeat center center/cover;
+}
+
+.progress-page h1{
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.progress-page p{
+    opacity:0.7;
+    margin-bottom:30px;
+}
+
+.progress-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:25px;
+}
+
+/* GLASS CARD */
+.glass-card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border-radius:16px;
+    padding:25px;
+    border:1px solid rgba(255,255,255,0.15);
+    min-height:350px;
+}
+
+.glass-card h2{
+    margin-bottom:5px;
+}
+
+.glass-card p{
+    font-size:14px;
+    margin-bottom:20px;
+    opacity:0.7;
+}
