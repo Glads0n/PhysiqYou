@@ -60,7 +60,7 @@ function getCSRFToken() {
 }
 
 const api = axios.create({
-  baseURL: "https://physiqyou.onrender.com",
+  baseURL: "https://physiqyou.onrender.com/api/",
   // baseURL: "http://127.0.0.1:8000/api/",
   withCredentials: true,
 });
