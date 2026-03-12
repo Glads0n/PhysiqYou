@@ -60,6 +60,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://physiq-you.vercel.app",
+    "https://physiq-laiojucb6-glads0ns-projects.vercel.app"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
