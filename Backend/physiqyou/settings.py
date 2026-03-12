@@ -68,6 +68,7 @@ CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
     "https://physiq-you.vercel.app",
+    "https://physiq-laiojucb6-glads0ns-projects.vercel.app",
 ]
 
 CSRF_COOKIE_SAMESITE = "None"
