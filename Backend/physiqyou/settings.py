@@ -56,15 +56,24 @@ MIDDLEWARE = [
 
 ]
 
+from corsheaders.defaults import default_headers
+
 CORS_ALLOWED_ORIGINS = [
     "https://physiq-you.vercel.app",
 ]
 
+# Optional: regex allows any HTTPS subdomain just in case
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://physiq-you\.vercel\.app$",
+]
+
 CORS_ALLOW_CREDENTIALS = True
 
-CSRF_TRUSTED_ORIGINS = [
-    "https://physiq-you.vercel.app",
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    "X-CSRFToken",
 ]
+
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 CSRF_COOKIE_SAMESITE = "None"
 SESSION_COOKIE_SAMESITE = "None"
