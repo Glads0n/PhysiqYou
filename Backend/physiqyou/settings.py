@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-py6qf6nz726&++o(z+8-e(w9+p$(mtediaei2r0c*0#a18i+(v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -57,18 +57,13 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
     "https://physiq-you.vercel.app",
-    "https://physiq-laiojucb6-glads0ns-projects.vercel.app"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:5173",
     "https://physiq-you.vercel.app",
-    "https://physiq-laiojucb6-glads0ns-projects.vercel.app",
 ]
 
 CSRF_COOKIE_SAMESITE = "None"
