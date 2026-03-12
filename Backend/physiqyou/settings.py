@@ -82,6 +82,9 @@ SESSION_COOKIE_SAMESITE = "None"
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 
+CSRF_COOKIE_PATH = "/"
+SESSION_COOKIE_PATH = "/"
+
 ROOT_URLCONF = 'physiqyou.urls'
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
