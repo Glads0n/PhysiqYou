@@ -21,9 +21,17 @@ import { useEffect } from "react";
 
 function App() {
 
-  useEffect(() => {
-    api.get("csrf/", { withCredentials: true });
-  }, []);
+useEffect(() => {
+  const getToken = async () => {
+    try {
+      await api.get("csrf/");
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  getToken();
+}, []);
 
   return (
     
