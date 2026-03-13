@@ -85,8 +85,6 @@ SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_PATH = "/"
 SESSION_COOKIE_PATH = "/"
 
-CSRF_COOKIE_DOMAIN = "physiqyou.onrender.com"
-SESSION_COOKIE_DOMAIN = "physiqyou.onrender.com"
 
 CSRF_COOKIE_HTTPONLY = False
 

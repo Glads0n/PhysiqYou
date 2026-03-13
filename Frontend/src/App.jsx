@@ -22,7 +22,7 @@ import { useEffect } from "react";
 function App() {
 
   useEffect(() => {
-    api.get("csrf/");
+    api.get("csrf/", { withCredentials: true });
   }, []);
 
   return (
