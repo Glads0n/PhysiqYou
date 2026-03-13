@@ -15,12 +15,17 @@ import UpdateWeight from "./pages/UpdateWeight";
 import Progress from "./pages/Progress";
 import FAQ from "./pages/FAQ";
 import Feedback from "./pages/Feedback";
+import api from "./api/axios";
+import { useEffect } from "react";
 
 
 function App() {
+
+  useEffect(() => {
+    api.get("csrf/");
+  }, []);
+
   return (
-
-
     
     <BrowserRouter>
     
