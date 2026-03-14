@@ -79,7 +79,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://scintillating-wonder-production.up.railway.app/api/",
+  baseURL: "https://physiqyou.onrender.com",
 
   withCredentials: true,
 
