@@ -27,6 +27,8 @@ const navigate = useNavigate();
 const handleLogin = async () => {
   try {
 
+    await api.get ("csrf/")
+
     const response = await api.post("login/", {
       username,
       password,
