@@ -66,6 +66,8 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_CREDENTIALS = True
 
+CORS_ALLOW_ALL_ORIGINS = False
+
 CORS_ALLOW_HEADERS = list(default_headers) + [
     "X-CSRFToken",
 ]
@@ -75,7 +77,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://scintillating-wonder-production.up.railway.app"
 ]
 
-
+CSRF_COOKIE_DOMAIN = None
 
 CSRF_COOKIE_SAMESITE = "None"
 SESSION_COOKIE_SAMESITE = "None"
@@ -93,6 +95,8 @@ SESSION_COOKIE_HTTPONLY = False
 CSRF_USE_SESSIONS = False
 
 CORS_EXPOSE_HEADERS = ["Content-Type", "X-CSRFToken"]
+
+SESSION_ENGINE = "django.contrib.sessions.backends.db"
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
