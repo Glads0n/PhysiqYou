@@ -87,6 +87,13 @@ SESSION_COOKIE_PATH = "/"
 
 
 CSRF_COOKIE_HTTPONLY = False
+SESSION_COOKIE_HTTPONLY = False
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.SessionAuthentication",
+    ]
+}
 
 ROOT_URLCONF = 'physiqyou.urls'
 
