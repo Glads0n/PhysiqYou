@@ -72,7 +72,7 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
 
 CSRF_TRUSTED_ORIGINS = [
     "https://physiq-you.vercel.app",
-    "scintillating-wonder-production.up.railway.app"
+    "https://scintillating-wonder-production.up.railway.app"
 ]
 
 
