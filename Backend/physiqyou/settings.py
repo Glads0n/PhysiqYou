@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/6.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
-
+import os
 from django.conf import settings
 from pathlib import Path
 
@@ -72,6 +72,7 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
 
 CSRF_TRUSTED_ORIGINS = [
     "https://physiq-you.vercel.app",
+    "scintillating-wonder-production.up.railway.app"
 ]
 
 
