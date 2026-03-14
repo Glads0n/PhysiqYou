@@ -79,7 +79,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://physiqyou.onrender.com",
+  baseURL: "https://physiqyou.onrender.com/api/",
 
   withCredentials: true,
 
