@@ -46,8 +46,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -72,6 +72,7 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
 
 CSRF_TRUSTED_ORIGINS = [
     "https://physiq-you.vercel.app",
+    "https://physiqyou.onrender.com"
 ]
 
 
@@ -88,6 +89,10 @@ SESSION_COOKIE_PATH = "/"
 
 CSRF_COOKIE_HTTPONLY = False
 SESSION_COOKIE_HTTPONLY = False
+
+CSRF_USE_SESSIONS = False
+
+CORS_EXPOSE_HEADERS = ["Content-Type", "X-CSRFToken"]
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
