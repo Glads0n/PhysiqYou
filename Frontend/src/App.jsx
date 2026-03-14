@@ -22,9 +22,17 @@ import { useEffect } from "react";
 function App() {
 
 useEffect(() => {
-  api.get("csrf/")
-    .then(() => console.log("CSRF cookie set"))
-    .catch((err) => console.log(err));
+  const getToken = async () => {
+    try {
+      await api.get("csrf/", {
+        withCredentials: true
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  getToken();
 }, []);
 
   return (
