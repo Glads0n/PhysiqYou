@@ -56,7 +56,7 @@ def login_view(request):
 @api_view(["GET"])
 @ensure_csrf_cookie
 def csrf_view(request):
-    return JsonResponse({"message": "CSRF cookie set"})
+    return Response({"message": "CSRF cookie set"})
 
 @api_view(['POST'])
 def logout_user(request):

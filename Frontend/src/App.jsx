@@ -22,17 +22,9 @@ import { useEffect } from "react";
 function App() {
 
 useEffect(() => {
-  const getToken = async () => {
-    try {
-      await api.get("csrf/", {
-        withCredentials: true
-      });
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  getToken();
+  api.get("csrf/").catch((err) => {
+    console.warn("CSRF fetch failed:", err.message);
+  });
 }, []);
 
   return (

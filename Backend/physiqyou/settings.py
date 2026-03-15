@@ -83,6 +83,19 @@ CORS_ALLOW_METHODS = [
     "POST",
     "PUT",
 ]
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+
 CORS_PREFLIGHT_MAX_AGE = 86400
 
 SESSION_ENGINE = "django.contrib.sessions.backends.db"
