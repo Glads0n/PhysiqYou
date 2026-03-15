@@ -74,6 +74,16 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
 SESSION_ENGINE = "django.contrib.sessions.backends.db"
 
 REST_FRAMEWORK = {
