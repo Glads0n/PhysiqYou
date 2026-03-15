@@ -82,6 +82,8 @@ REST_FRAMEWORK = {
     ]
 }
 
+APPEND_SLASH = True
+
 ROOT_URLCONF = 'physiqyou.urls'
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
