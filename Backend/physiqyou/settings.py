@@ -58,44 +58,22 @@ MIDDLEWARE = [
 
 ]
 
-from corsheaders.defaults import default_headers
+CSRF_COOKIE_SAMESITE = "Lax"
+SESSION_COOKIE_SAMESITE = "Lax"
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_HTTPONLY = False
+SESSION_COOKIE_HTTPONLY = True
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://physiq-you.vercel.app",
+]
 
 CORS_ALLOWED_ORIGINS = [
     "https://physiq-you.vercel.app",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
-
-CORS_ALLOW_ALL_ORIGINS = False
-
-CORS_ALLOW_HEADERS = list(default_headers) + [
-    "X-CSRFToken",
-]
-
-CSRF_TRUSTED_ORIGINS = [
-    "https://physiq-you.vercel.app",
-    "https://physiqyou.onrender.com"
-]
-
-CSRF_COOKIE_DOMAIN = None
-
-CSRF_COOKIE_SAMESITE = "None"
-SESSION_COOKIE_SAMESITE = "None"
-
-CSRF_COOKIE_SECURE = True
-SESSION_COOKIE_SECURE = True
-
-CSRF_COOKIE_PATH = "/"
-SESSION_COOKIE_PATH = "/"
-
-
-CSRF_COOKIE_HTTPONLY = False
-SESSION_COOKIE_HTTPONLY = False
-
-CSRF_USE_SESSIONS = False
-
-CORS_EXPOSE_HEADERS = ["Content-Type", "X-CSRFToken"]
-
 SESSION_ENGINE = "django.contrib.sessions.backends.db"
 
 REST_FRAMEWORK = {

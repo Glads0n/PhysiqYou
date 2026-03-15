@@ -20,7 +20,7 @@ function getCookie(name) {
 }
 
 const api = axios.create({
-  baseURL: "https://physiqyou.onrender.com/api/",
+  baseURL: "/api/",
   withCredentials: true,
 });
 

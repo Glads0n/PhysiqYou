@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://physiqyou.onrender.com/api/:path*"
+    }
+  ]
+}

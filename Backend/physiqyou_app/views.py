@@ -53,6 +53,7 @@ def login_view(request):
 
     return Response({'error': 'Invalid credentials'}, status=401)
 
+@api_view(["GET"])
 @ensure_csrf_cookie
 def csrf_view(request):
     return JsonResponse({"message": "CSRF cookie set"})
